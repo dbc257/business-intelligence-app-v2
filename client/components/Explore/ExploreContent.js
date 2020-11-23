@@ -79,7 +79,7 @@ class ExploreContent extends Component {
                   personal computers, tablets, wearables, and accessories
                   worldwide. It also sells various related services.
                 </p>
-                <Link href="/[company]" as="/apple">
+                <Link href="/charts/[company]" as="/charts/apple">
                   {/* <Link href="/charts/[company]" as="/charts/apple"> */}
                   <a className="service-btn">
                     See Charts
