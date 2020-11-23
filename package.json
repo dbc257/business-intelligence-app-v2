@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "postinstall": "cd client && npm install && npm run build && npm start"
+    "postinstall": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
