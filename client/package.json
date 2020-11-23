@@ -1,4 +1,7 @@
 {
+  "cacheDirectories": [
+    ".next/cache"
+  ],
   "name": "business-intelligence-app",
   "version": "2.1.0",
   "description": "BI App - Business Intelligence App",
@@ -6,8 +9,8 @@
   "scripts": {
     "start": "next start -p $PORT",
     "dev": "next",
-    "build": "next build"
-    
+    "build": "next build",
+    "heroku-postbuild": "npm run build"
   },
   "author": "David Carlisle",
   "license": "ICS",
@@ -31,5 +34,8 @@
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.9"
   },
-  "proxy": "http://localhost:3000"
+  "engines": {
+    "node": "14.12.0",
+    "npm": "6.14.6"
+  }
 }

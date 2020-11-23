@@ -1,6 +1,6 @@
 {
   "cacheDirectories": [
-    ".next/cache"
+    "./client/.next/cache"
   ],
   "name": "business-intelligence-app",
   "version": "2.1.0",
@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "nodemon app.js -p $PORT",
     "build": "cd client && npm run build",
-    "start": "NODE_ENV=production node app.js -p $PORT && node ./client/.next/static/chunks/pages/index-afedb0cac98a468598da.js",
+    "start": "NODE_ENV=production node app.js -p $PORT && cd client && npm run start",
     "postinstall": "cd client && npm install"
   },
   "repository": {
