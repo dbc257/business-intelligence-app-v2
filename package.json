@@ -4,8 +4,9 @@
   "description": "BI App - Business Intelligence App",
   "main": "app.js",
   "scripts": {
-    "start": "node ./client/.next/server/pages/_app.js",
-    "dev": "nodemon app.js",
+    "dev": "nodemon app.js -p $PORT",
+    "build": "next build",
+    "start": "NODE_ENV=production node app.js -p $PORT",
     "postinstall": "cd client && npm install && npm run build"
   },
   "repository": {
