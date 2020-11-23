@@ -37,15 +37,15 @@ app.use("/userData", userDataRouter);
 const companyRouter = require("./routes/charts");
 app.use("/charts", companyRouter);
 
-app.get("/", (req, res) => {
-  res.render("index")
-})
-app.get("/login", (req, res) => {
-  res.render("login")
-})
-app.get("/register", (req, res) => {
-  res.render("register")
-})
+// app.get("/", (req, res) => {
+//   res.json("index")
+// })
+// app.get("/api/login", (req, res) => {
+//   res.json("api/login")
+// })
+// app.get("/api/register", (req, res) => {
+//   res.json("api/register")
+// })
 
 // POST route to register a new user account
 app.post("/register", (req, res) => {
