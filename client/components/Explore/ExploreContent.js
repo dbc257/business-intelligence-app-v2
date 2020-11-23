@@ -30,7 +30,7 @@ class ExploreContent extends Component {
                   in the United States and internationally.
                 </p>
                 <Link href={{
-                  pathname: "/charts/[company]", 
+                  pathname: "//charts/[company]", 
                   query: { company: 'tesla'},
                   }}
                   // as={`/charts/${company}`} 
@@ -79,7 +79,7 @@ class ExploreContent extends Component {
                   personal computers, tablets, wearables, and accessories
                   worldwide. It also sells various related services.
                 </p>
-                <Link href="/charts/[company]" as="/charts/apple">
+                <Link href="/[company]" as="/apple">
                   {/* <Link href="/charts/[company]" as="/charts/apple"> */}
                   <a className="service-btn">
                     See Charts

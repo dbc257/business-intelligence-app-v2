@@ -52,8 +52,8 @@ function CapitalizeName() {
 // });
   useEffect(() => {
     let isSubscribed = true
-    fetch(`https://bi-cube.herokuapp.com/${company}`)
-      // fetch(`http://localhost:3001/${company}`)
+    // fetch(`https://bi-cube.herokuapp.com/${company}`)
+      fetch(`//${company}`)
       .then((response) => response.json())
       .then((result) => {
         if (isSubscribed) {

@@ -1,17 +1,18 @@
 {
-  "name": "cpm-cube",
-  "version": "1.0.0",
-  "description": "",
+  "name": "business-intelligence-app",
+  "version": "2.1.0",
+  "description": "BI App - Business Intelligence App",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "postinstall": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dbc257/CPM-Cube.git"
   },
-  "author": "",
+  "author": "David Carlisle",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dbc257/CPM-Cube/issues"

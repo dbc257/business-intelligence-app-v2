@@ -35,8 +35,8 @@ function Charts() {
 //   return nameCapitalized
 // }
 useEffect(() => {
-  fetch(`https://bi-cube.herokuapp.com/${company}/${year}`)
-    // fetch(`http://localhost:3001/${company}/${year}`)
+  // fetch(`https://bi-cube.herokuapp.com/${company}/${year}`)
+    fetch(`//${company}/${year}`)
     .then((response) => response.json())
     .then((result) => {
       let data = result.sort(function (a, b) {

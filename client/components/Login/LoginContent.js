@@ -34,7 +34,8 @@ class LoginContent extends React.Component {
 
   handleLoginPost = () => {
     axios
-      .post("https://bi-cube.herokuapp.com/api/login", {
+      // .post("https://bi-cube.herokuapp.com/api/login", {
+      .post("/api/login", {
         username: this.state.user.username,
         password: this.state.user.password,
       })
