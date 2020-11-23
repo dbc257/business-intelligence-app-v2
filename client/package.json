@@ -7,7 +7,7 @@
   "description": "BI App - Business Intelligence App",
   "main": "index.js",
   "scripts": {
-    "start": "next start -p $PORT",
+    "start": "next start $PORT",
     "dev": "next",
     "build": "next build",
     "heroku-postbuild": "npm run build"

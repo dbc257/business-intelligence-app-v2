@@ -8,9 +8,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js -p $PORT",
-    "build": "cd client && npm run build",
     "start": "NODE_ENV=production node app.js -p $PORT && cd client && npm run start",
-    "postinstall": "cd client && npm install"
+    "postinstall": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
