@@ -9,8 +9,8 @@
   "scripts": {
     "dev": "nodemon app.js -p $PORT",
     "build": "cd client && npm run build",
-    "start": "NODE_ENV=production node app.js -p $PORT",
-    "postinstall": "cd client && npm install && npm run build"
+    "start": "NODE_ENV=production node app.js -p $PORT && node ./client/.next/static/chunks/pages/index-afedb0cac98a468598da.js",
+    "postinstall": "cd client && npm install"
   },
   "repository": {
     "type": "git",
