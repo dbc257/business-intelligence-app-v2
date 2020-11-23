@@ -15,32 +15,60 @@ export default function DropdownMenu() {
                         <div id="navbarSupportedContent">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link href="#">
+                                    {/* <Link href={{
+                                            pathname: "#", 
+                                            query: "#",
+                                            }} */}
+                                    {/* // href="#" as="#"
+                                    // > */}
                                         <a className="nav-link-1234">
                                             Other metrics <i className="fas fa-chevron-down"></i>
                                         </a>
-                                    </Link>
+                                    {/* </Link> */}
 
                                     <ul className="dropdown-menu">
                                         <li className="nav-item">
-                                            <Link href="/charts/[company]" as={`/charts/${company}`} >
+                                            <Link href={{
+                                            pathname: "/charts/[company]", 
+                                            query: { company: `${company}`},
+                                            }}
+                                            // as={`/charts/${company}`} 
+                                            >
                                                 <a className="nav-link">All years</a>
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="/charts/[company]/[year]" as={`/charts/${company}/2019`} >
+                                            <Link href={{
+                                                pathname: '/charts/[company]/[year]',
+                                                // query: { company: `${company}`, year: `${year}` },
+                                                query: { company: `${company}`, year: '2019' },
+                                            }}
+                                            // href="/charts/[company]/[year]" as={`/charts/${company}/2019`} 
+                                            >
                                                 <a className="nav-link">2019-2020</a>
                                             </Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link href="/charts/[company]/[year]" as={`/charts/${company}/2018`} >
+                                            <Link href={{
+                                                pathname: '/charts/[company]/[year]',
+                                                // query: { company: `${company}`, year: `${year}` },
+                                                query: { company: `${company}`, year: '2018' },
+                                            }}
+                                            // href="/charts/[company]/[year]" as={`/charts/${company}/2018`} 
+                                            >
                                                 <a className="nav-link">2018</a>
                                             </Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link href="/charts/[company]/[year]" as={`/charts/${company}/2017`} >
+                                            <Link href={{
+                                                pathname: '/charts/[company]/[year]',
+                                                query: { company: `${company}`, year: '2017' },
+                                                // query: { company: `${company}`, year: `${year}` },
+                                            }}
+                                            // href="/charts/[company]/[year]" as={`/charts/${company}/2017`} 
+                                            >
                                                 <a className="nav-link">2017</a>
                                             </Link>
                                         </li>

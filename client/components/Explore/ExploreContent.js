@@ -29,8 +29,14 @@ class ExploreContent extends Component {
                   electric vehicles, and energy generation and storage systems
                   in the United States and internationally.
                 </p>
+                <Link href={{
+                  pathname: "/charts/[company]", 
+                  query: { company: 'tesla'},
+                  }}
+                  // as={`/charts/${company}`} 
+                  >
 
-                <Link href="/charts/[company]" as="/charts/tesla">
+                {/* <Link href="/charts/[company]" as="/charts/tesla"> */}
                   {/* <Link href="/charts/[company]" as="/charts/telsa"> */}
                   <a className="service-btn">
                     See Charts

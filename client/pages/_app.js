@@ -12,7 +12,7 @@ import "../public/css/responsive.css";
 import App from "next/app";
 import Head from "next/head";
 import Loader from "../components/Shared/Loader";
-import GoTop from "../components/Shared/GoTop";
+// import GoTop from "../components/Shared/GoTop";
 
 // export default
 
@@ -46,6 +46,7 @@ class WrappedApp extends App {
       <React.Fragment>
         <Head>
           <title>BI App - Business Intelligence App</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta property='og:image' content='/images/BIA.png'></meta>
           <meta property='og:url' content='//business-intelligence-app.vercel.app/'></meta>
           <meta
@@ -64,13 +65,13 @@ class WrappedApp extends App {
           
         </Head>
 
-        <Component {...pageProps} />
+        {this.props.Component && this.props.pageProps && <Component {...pageProps} />}
 
         {/* Preloader */}
         <Loader loading={this.state.loading} />
 
         {/* Go Top Button */}
-        <GoTop scrollStepInPx="50" delayInMs="10.50" />
+        {/* <GoTop scrollStepInPx="50" delayInMs="10.50" /> */}
       </React.Fragment>
     );
   }

@@ -9,7 +9,7 @@ function auth(req, res, next) {
     // get the token
     // Bearer ADADAFAFSEFSRGRGDRF
     const token = headers.split(" ")[1];
-    const decoded = jwt.verify(token, "keyboard cat");
+    const decoded = jwt.verify(token, process.env.JWT_PASSWORD);
     if (decoded) {
       const username = decoded.username;
       // check in the database if the user exists
