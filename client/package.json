@@ -4,9 +4,10 @@
   "description": "BI App - Business Intelligence App",
   "main": "index.js",
   "scripts": {
+    "start": "PORT=3001 next start",
     "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build"
+    
   },
   "author": "David Carlisle",
   "license": "ICS",
