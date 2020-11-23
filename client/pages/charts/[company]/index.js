@@ -53,7 +53,7 @@ function CapitalizeName() {
   useEffect(() => {
     let isSubscribed = true
     // fetch(`https://bi-cube.herokuapp.com/${company}`)
-      fetch(`//${company}`)
+    fetch(`https://business-intelligence-app.herokuapp.com/${company}`)
       .then((response) => response.json())
       .then((result) => {
         if (isSubscribed) {

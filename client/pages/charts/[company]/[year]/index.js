@@ -36,7 +36,8 @@ function Charts() {
 // }
 useEffect(() => {
   // fetch(`https://bi-cube.herokuapp.com/${company}/${year}`)
-    fetch(`//${company}/${year}`)
+  // fetch(`/${company}/${year}`)
+  fetch(`https://business-intelligence-app.herokuapp.com/${company}/${year}`)
     .then((response) => response.json())
     .then((result) => {
       let data = result.sort(function (a, b) {
