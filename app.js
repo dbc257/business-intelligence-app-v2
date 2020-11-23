@@ -37,6 +37,16 @@ app.use("/userData", userDataRouter);
 const companyRouter = require("./routes/charts");
 app.use("/charts", companyRouter);
 
+app.get("/", (req, res) => {
+  res.render("index")
+})
+app.get("/login", (req, res) => {
+  res.render("login")
+})
+app.get("/register", (req, res) => {
+  res.render("register")
+})
+
 // POST route to register a new user account
 app.post("/register", (req, res) => {
   let username = req.body.username;
